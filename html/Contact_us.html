@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>Rebirth Global Enterprises</title>
+
+<link rel="stylesheet" href="../styles/layout.css" type="text/css">
+<script >
+
+var ObjById = function(id) {
+		return document.getElementById(id);
+	}
+var veryfy=function () {
+    var x = document.forms["myForm"]["fname"].value;
+	var y = document.forms["myForm"]["email"].value;
+	var z = document.forms["myForm"]["comment"].value;
+    if ((x == null || x == "") || (y== null || y == "") || (z== null || z == "")){
+        alert("Everything must be filled out");
+        return false;
+    }
+}
+
+window.onload = function () {
+		ObjById("fname").focus();
+		ObjById("submit").onclick = veryfy;
+	}
+</script>
+</head>
+<body >
+
+<div class="row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="#">Rebirth Global Enterprises</a></h1>
+      <h2>Change The World a Better Future</h2>
+    </div>
+    <form action="#" method="post">
+      <fieldset>
+        
+        <input type="text" value="Search Our Website&hellip;" onFocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;">
+        <input type="submit" id="sf_submit" value="submit">
+      </fieldset>
+    </form>
+    <nav>
+      <ul>
+        <li><a href="../home.html">Home Page</a></li>
+        <li><a href="About_us.html">About Us</a></li>
+        <li><a href="our_products.html">Our products</a></li>
+			<li><a href="site_map.html">Site Map</a></li>
+         
+         
+      </ul>
+    </nav>
+  </header>
+</div>
+<!-- content -->
+<div class="row2" >
+  <div id="container" class="clear" >
+    <!-- content body -->
+	 
+	 <h3> Submit a question or comment</h3>
+   
+	<div id="left_column" >
+
+	<form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+	<br/>
+	Name
+	<br/>
+     <input id="fname" class="long_bar" type="text"  name="fname"  >
+	 <br/><br/>
+	 Subject:  
+	 <br/>
+			  <select class="long_bar" name="subject">	
+                    <option></option>
+                    <option value="1"> Order and Shipping Status</option>
+                    <option value="2"> Payments and Refunds</option>
+					 <option value="3">Account Issues</option>
+					  <option value="4"> Technical Issues</option>
+					   <option value="5"> Others</option>
+                    </select>
+	<br/>
+	 <br/>
+	 Email
+	 <br/>
+	<input id="email" class="long_bar" type="email" size="50" maxlength="50" value="Your email address" name="email">
+	<br/>
+	<br/>
+	<input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female<br>
+    <br/>
+	<textarea  class="long_bar" name="comment"  rows="4" cols="50"> </textarea>
+	<br/>
+		
+	<input  class= "button" type="reset" value="reset" /> &nbsp; <input id="submit"class= "button" type="submit" value="submit"  name="submit"/>
+  </form>
+
+	</div>
+    <!-- main content -->
+    <div id="homepage">
+      <!-- services area -->
+	  
+	  <div id="right_column" >
+      <section id="services" class="clear">
+        
+		
+        <article class="one_quarter lastbox">
+          <img src="../images/Contact.png" id="contact">
+        </article>
+		
+		<article class="one_quarter">
+         
+      </section>
+	 </div>
+      <!-- / services area -->
+      <!-- ########################################################################################## -->
+      <!-- ########################################################################################## -->
+      <!-- ########################################################################################## -->
+      <!-- ########################################################################################## -->
+      
+	  <div id="right_column" >
+	  <section class="last clear">
+        <article class="three_quarter">
+          <h2>You Can Also Reach Us At </h2>
+			<p> 57 East Evergreen st, Bronx,  NY 10452</p>
+				<p>(347)-287- 5757</p>
+				<p>OR by Email AT:<a href="mailto:someone@example.com"> LestDoIt@RebirthGlobal.com</a>.</p>
+
+
+          
+        </article>
+		</div>
+	 </section>
+      <!-- / Two Third -->
+    </div>
+    <!-- / content body -->
+  </div>
+</div>
+<!-- Footer -->
+<div class="row3">
+  <footer id="footer" class="clear">
+    <p >&#169; copyright 2016 James Santana &#8212; &#9825; . All rigths reserved.<a href="#"></a></p>
+    
+  </footer>
+</div>
+</body>
+</html>
